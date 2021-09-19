@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background: linear-gradient(to bottom, #dd799b, #000000);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.btn {
+	background-color: #f3007a;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+	font-family: inherit;
+	font-weight: bold;
+	padding: 20px 40px;
+	position: relative;
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.btn:hover .tooltip {
+	transform: translate(-50%, 120%);
+	opacity: 1;
+}
+
+.tooltip {
+	background-color: rgb(233, 169, 193);
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 5px;
+	color: rgb(0, 0, 0);
+	font-weight: 300;
+	padding: 15px 30px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	opacity: 0;
+	transform: translate(-50%, 0%);
+	transition: all 0.5s ease;
+	text-align: center;
+    white-space: nowrap;
+}
+
+	.floating-text {
+        background-color: #f3007a;
+        border-radius: 10px 10px 0 0;
+        color: rgb(215, 170, 251);
+        font-family: "Alfa Slab One", cursive;
+        padding: 12px 20px;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 998;
+        
+    }
+
+
+
+.floating-text a {
+	color:  rgb(255, 255, 255);;
+	text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
